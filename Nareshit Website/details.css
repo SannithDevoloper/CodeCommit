@@ -1,0 +1,60 @@
+header{
+    height:70px;
+    width:100%;
+    background-color:#3b2632;
+
+}
+a{
+    text-decoration:none
+}
+#brand{
+    font-size:13px;
+    color:white;
+    margin-left:1%;
+    margin-top:0px;
+    
+    float: left;
+}
+#social{
+    float:right
+}
+.socialImg{
+    height:50px;
+}
+footer{
+    margin-top:2%;
+    height:120px;
+    width:100%;
+    background-color:#3b2632;
+    color: white;
+    text-align: center;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.footDiv{
+    float:left;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noborder{
+    border:none
+}
+
+.fetIcon{
+    height:70px;
+    width:70px;
+    margin-left:2%;
+}
+figure{
+    float:left;
+    margin-left:2%;
+}
+.feature_container{
+    margin-left:5%;
+    width: 100%;
+}

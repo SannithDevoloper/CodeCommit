@@ -1,0 +1,29 @@
+.container{
+    float: left; width: 20%; height: 500px; margin: 2%
+}
+.child{
+    height: 50%;
+          
+          overflow: scroll;
+}
+h1{
+    background-color: aqua;
+}
+.main{
+    display: inline-block;
+}
+img{
+    width:100%;height: 50%;
+}
+#p1{
+    background-color: orange
+}
+#p2{
+    background-color: blueviolet;
+}
+#p3{
+    background-color:green;
+}
+#p4{
+    background-color: burlywood;
+}

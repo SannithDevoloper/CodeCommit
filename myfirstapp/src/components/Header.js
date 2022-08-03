@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React,{Fragment,Component} from 'react';
 import './Header.css';
 class Header extends Component{
@@ -21,22 +21,7 @@ class Header extends Component{
 
     }
 }
-
-
-
-=======
-import React from 'react';
-
-const Header = () => {
-    return(
-        <div>
-            <center>
-                <h1>Developer Funnel</h1>
-            </center>
-            <hr/>
-        </div>
-    )
-}
-
->>>>>>> 91d626b46bcfe99b1bc157671fb34b3dcab23113
 export default Header;
+
+
+

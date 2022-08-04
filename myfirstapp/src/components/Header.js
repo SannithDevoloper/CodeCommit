@@ -2,15 +2,30 @@
 import React,{Fragment,Component} from 'react';
 import './Header.css';
 class Header extends Component{
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         title: "ReactApp...! ",
+         keyword:"SearchBar",
+
+      }
+    }
+    handleChange=(event)=>{
+        console.log(event.target.value);
+        this.setState({keyword:event.target.value?event.target.value:'SearchBar'});
+
+    }
+    
     render(){
         return(
             <Fragment>
                 <header>  
-                    <div className='logo'>ReactApp...!</div>
+                    <div className='logo'>{this.state.title}</div>
                         <center>
-                   
-                    <span className='text'>SerachBar</span>
-                    <input type="text"/>
+                        <input type="text" onChange={this.handleChange}/>
+                    <div className='text'>{this.state.keyword}</div> 
+                  
                 </center>
                 </header>
               

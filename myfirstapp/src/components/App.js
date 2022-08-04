@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-const App = () => {
-    return (
+import ProductDisplay from './ProductDisplay';
+class App extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+        productData:JSON
+      }
+    }
+    
+    render(){return (
         <div>
             <Header/>
-            <h1>Hiii From React</h1>
-            <h2>Developer Funnel</h2>
-            <Footer/>
+            <ProductDisplay proddata={this.state.productData}/>
+            <Footer year='2022' month='august'/>
         </div>
-    )
+    )}
+    
 }
 export default App;

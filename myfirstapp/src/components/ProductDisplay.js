@@ -1,10 +1,36 @@
-import React from 'react'
+import React from 'react';
+
+import './product.css';
+
 
 const ProductDisplay=(props)=> {
     console.log('in products',props)
+
+
+    const renderProduct=props.prodData.map((item) =>{
+
+      return(
+        <div className="card">
+        <img src={item.image} alt={item.name}/>
+        <div>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>Rs.{item.cost}</p>
+            <p>{item.uses}</p>
+        </div>
+    </div>
+
+    )
+      })
+
+    
   return (
-    <div>
-      <h1>ProductDisplay</h1> 
+    <div className="main" >
+    
+      
+     {renderProduct}
+      
+     
 
       
     </div>

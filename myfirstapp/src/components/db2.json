@@ -1,0 +1,103 @@
+
+[
+    {
+    "id":1,
+    "brand":"BombayMarket",
+    "discount":"Less than 10%",
+    "name":"Basmati Rice",
+    "image":"https://i.ibb.co/Y3DyxWq/basmati.png",
+    "description":"25 Kg Rice Bag",
+    "cost":2000
+},
+{
+    "id":2,
+    "brand":"Kurnool Rice",
+    "discount":"10% and above",
+    "name":"White Rice",
+    "image":"https://i.ibb.co/k2twFXC/whiterice.jpg",
+    "description":"25 Kg Rice Bag",
+    "cost":1300
+},
+{
+    "id":3,
+    "brand":"NZB Brown Rice",
+    "discount":"10% and above",
+    "name":"Brown Rice",
+    "image":"https://i.ibb.co/kq40c9k/brownrice.webp" ,
+    "description":"25 kg Rice Bag",
+    "cost":3200
+},
+{
+    "id":4,
+    "brand":"veg tomato",
+    "discount":"Less than 10%",
+    "name":"Tomato",
+    "image":"https://i.ibb.co/D5xDLR7/tomato.jpg" ,
+    "description":"Box of 1 Kg",
+    "cost":30
+},
+{
+    "id":5,
+    "brand":"Veg- Bhendi",
+    "discount":"5% and above",
+    "name":"Bhendi",
+    "image":"https://i.ibb.co/syCLMf9/bhendi.jpg" ,
+    "description":"Box of 1 Kg",
+    "cost":25
+},
+{
+    "id":6,
+    "brand":"Veg-Brinjal",
+    "discount":"Less than 10%",
+    "name":"Brinjal",
+    "image":"https://i.ibb.co/7RVZrgY/brinjal.jpg" ,
+    "description":"Box of 1 Kg",
+    "cost":30
+},
+{
+    "id":7,
+    "brand":"Fruit-Gauva",
+    "discount":"10% and above",
+    "name":"Guava",
+    "image":"https://i.ibb.co/x89tdk5/guava.jpg" ,
+    "description":"box of dozen",
+    "cost":100
+},
+{
+    "id":8,
+    "brand":"Fruit-Mango",
+    "discount":"Less than 10%",
+    "name":"Mangoes",
+    "image":"https://i.ibb.co/GP0vvCx/mangoes.jpg",
+    "description":"box of 25kg",
+    "cost":1500
+},
+{
+    "id":9,
+    "brand":"Fruit-Pomogranite",
+    "discount":"10% and above",
+    "name":"Pomogranite",
+    "image":"https://i.ibb.co/JxyggGn/pomegranate.jpg",
+    "description":"box of dozen",
+    "cost":100
+},
+{
+    "id":10,
+    "brand":"Jonalu",
+    "discount":"10% and above",
+    
+    "name":"Jonalu",
+    "image":"https://i.ibb.co/Hph54kM/jonalu.jpg",
+    "description":"25 kg Bag",
+    "cost":3250
+},
+{
+    "id":11,
+    "brand":"Fruit-Papaya",
+    "discount":"Less than 10%",
+    "name":"Papaya",
+    "image":"https://i.ibb.co/gS8XS79/papaya.jpg",
+    "description":"cost Per kg",
+    "cost":20
+}
+]

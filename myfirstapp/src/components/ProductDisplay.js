@@ -11,7 +11,7 @@ const ProductDisplay=(props)=> {
 
       return(
         
-        <div className="card" >
+        <div className="card" key={item.id} >
         <img src={item.image} alt={item.name}/>
         <div>
             <h3>{item.name}</h3>

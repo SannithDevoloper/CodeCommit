@@ -8,17 +8,28 @@ class App extends Component {
       super(props)
     
       this.state = {
-        productData:JSON
+        productData:JSON,
+        filteredData:JSON
       }
     }
+    filterData = (keyword) => {
+        
+      let output = this.state.productData.filter((data) => {
+          return (data.name.toLowerCase().indexOf(keyword.toLowerCase())>-1)
+      })
+      console.log("in filter",output)
+
+      this.setState({filteredData:output})
+  }
+
     
     render(){return (
       //in header component props is assigned from child to parent
+      //in productDisplayComponent state is assigned as props
     
-        <div style={({backgroundColor:'white'})}>
-            <Header userInput={(data) => {console.log('inside App',data)}}/> 
-            
-            <ProductDisplay prodData={this.state.productData}/>
+        <div style={({backgroundColor:'burlywood'})}>
+            <Header userInput={(data) => {this.filterData(data)}}/> 
+            <ProductDisplay prodData={this.state.filteredData}/>
             <Footer year='2022' month='august'/>
         </div>
     )}

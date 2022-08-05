@@ -6,7 +6,7 @@ class Header extends Component{
       super(props)
     
       this.state = {
-         title: "ReactApp...! ",
+        // title: "ReactApp...! ",
          keyword:"SearchBar",
 
       }
@@ -21,17 +21,21 @@ class Header extends Component{
     render(){
         return(
             <Fragment>
-                <header>  
-                    <div className='logo'>{this.state.title}</div>
+                <header>
+                    
+                    <div className='logo'>
+                        <img src="https://i.ibb.co/9HLvXf0/logo2.jpg" alt="logo" />
+                    </div>
                         <center>
-                        <input type="text" onChange={this.handleChange}/>
-                    <div className='text'>{this.state.keyword}</div> 
+                        <div className='text'>{this.state.keyword}</div> 
+                        <input type="text" onChange={this.handleChange} style={{width:'80%',height:'40px'}}/>
+                       
                   
                 </center>
                 </header>
               
                 <hr/>
-                <hr/>
+                
             </Fragment>
         )
 

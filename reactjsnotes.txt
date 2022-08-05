@@ -1,0 +1,309 @@
+(1)ESSENTIALS =>
+https://code.visualstudio.com/  (Download & Install)
+https://nodejs.org/en/ (Download & Install)
+https://git-scm.com/downloads (Download & Install)
+https://github.com/ (Create account)
+https://github.com/Aakashdeveloper (Follow)
+
+Add To Chrome
+> https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+Add To VsCode
+> TabNine
+> VsCodeIcons
+> gitlens
+> githistory
+> spellCheck
+
+> https://htmlcolorcodes.com/
+> https://imgbb.com/
+>https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+(2)ABOUT_REACT=>
+React >
+React is a frontend framework/lib which help to build
+single page application using component base structure
+
+
+2,014,487
+open source
+> Any one can contribute to development
+
+JSON
+> JavaScript object notation
+# way to reperesnt data
+> key value pair
+[
+    {
+        "rollNo":1,
+        "name":"Nikita",
+        "city":"Paris
+    },
+    {
+        "name":"Amit",
+        "rollNo":1,
+        "city":"Delhi"
+    }
+]
+npm  > node package manager
+>>>>>>Package.json<<<<<<
+> Entry point to application
+> meta Data(name of app, version description)
+> cmd (start, build, test)
+> package name (used in app)
+
+//////Step to generate Package.json/////
+** Nodejs must be installed in your laptop
+> open terminal and go inside this folder
+> npm init
+> answer all questions
+> type yes
+
+//////Step to install package/////
+** Nodejs must be installed in your laptop
+> open terminal and go inside this folder
+> npm i packagename / npm install packagename
+
+///How to generate react app///
+** Nodejs must be installed in your laptop
+> open terminal and go inside this folder
+> npx create-react-app appname
+
+////////////////////
+# windows
+>>>>One Time in each laptop
+> open cmd as admin
+> npm i -g create-react-app
+
+>>>>>When you want to generate app
+> open terminal and go inside this folder
+> create-react-app appname
+
+# mac/linux
+>>>>One Time in each laptop
+> open terminal
+> sudo npm i -g create-react-app
+
+>>>>>When you want to generate app
+> open terminal and go inside this folder
+> create-react-app appname
+
+
+//////////Step to run react app////
+** Nodejs must be installed in your laptop
+> open terminal and go inside this folder
+
+npm uninstall packagename
+npm i package@version
+
+(3)HTML=>
+inline
+> start in the same 
+> only occupy the same required
+block
+> start in the new line
+> always take the whole width of screen
+
+
+(4)CSS=>
+inline 
+styletag
+stylesheet
+
+inline> styletag > stylesheet
+//inline
+{
+    color:red,
+    font-size:30px
+}
+//styletag
+{
+    color:orange,
+    display:block
+}
+//stylesheet
+{
+    font-size:40px;
+    disply:inline;
+    border:2px solid red
+}
+
+{
+    color:red;
+    font-size:30px;
+    display:block;
+    border:2px solid red
+}
+//////Way To Target//////
+TagName 
+> It will target all the tag of the same name
+Id
+> use to target particular element of the page
+> #
+Class
+> use to target multiple element with same property
+> .
+
+position: absolute
+position: relative
+  
+(5)RESPONSVIVE PAGES=>
+window.innerWidth
+1440
+window.innerWidth
+561
+window.innerWidth
+500
+window.innerWidth
+954
+window.innerWidth
+1246
+
+(6)BOOTSTRAP=>
+bootstarp3
+768px < xs
+768px > sm
+992px > md
+1200px > lg
+
+bootstarp4
+576 < col-
+576 > sm
+768 > md
+992 > lg
+1200 > xl
+
+bootstarp5
+576 < col-
+576 > sm
+768 > md
+992 > lg
+1200 > xl
+1400 > xxl
+
+(7)COMPARISION BW ES4 &ES6=>
+//////////////Es5/////
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+///es6////
+let add = (a,b) => {return a+b}
+add(1,2)
+
+es > Ecma Script
+
+/////////
+React > Main Library
+ReactDOM > Help to display content on screen
+ReactScript > Help to run the app
+
+
+function add(a,b){
+    return a,b
+}
+add(1,2)
+2
+
+function add(a,b){
+    var out = [a,b]
+    return out
+}
+add(1,2)
+[1,2]
+
+(8) COMPONENTS=>
+functional
+> Dumb component
+> Only use for the purpose of display
+> We cannot maintain state
+class
+> Logical Component
+> Use of calling api, writting logics as well as display
+> We can maintain state
+
+(9)PROPS &STATES=>
+props
+> Help to transfer data between 2 nested component
+> Value of props cannot be updated (immutable)
+state
+> Act like a local variable
+> Every component can have ist own state
+> State can be update (mutable)
+> Any data interaction will happen through state
+
+(10)TERENARY OPERATOR=>
+////ternary operator
+
+var a = 10
+a>10?"hii":"Bie"
+'Bie'
+var a = 10
+
+a==10?"hii":"Bie"
+'hii'
+
+var a = 10
+a>10?a+1:a-1
+9
+var a = 10
+a==10?a+1:a-1
+11
+
+(11)MAP=>
+//////map//////
+> map help to iterate over the data
+> it help to apply logic like add,sub,mul, div,bind in html
+> it always return the same length of output array as input
+
+var a = [4,7,9,12,3,45,67,8,18,31]
+a.map((data) => {return data*2})
+[8, 14, 18, 24, 6, 90, 134, 16, 36, 62]]
+
+(12)FILTER=>
+//////filter//////
+> filter help to filter out the way
+> it only return those value for which condition/output is true
+> it may or may not return same length of output
+
+var a = [4,7,9,12,3,45,67,8,18,31]
+a.filter((data) => {return data>20})
+[45, 67, 31]
+
+DIFF BW MAP & FILTER=>
+var a = [-1,0,1,2,3]
+a.map((data) => {return data*2})
+[-2, 0, 2, 4, 6]
+a.filter((data) => {return data*2})
+[-1, 1, 2, 3]
+
+truthy > any number except 0 weather +ve or -ve, true , string
+falsy > 0, null, undefined , false
+
+var city = ["Delhi","Mumbai","Pune","Boston","Helsinki"]
+city.indexOf('Pune')
+2
+city.indexOf('Delhi')
+0
+city.indexOf('Amsterdam')
+-1
+city.indexOf('London')
+-1
+
+
+(13)PROPS {CHILD TO PARENT}==>
+parent > child (props)
+child > parent (props with function)
+
+
+//parent
+function add(a,b){
+    return a+b
+}
+
+//child (call the function & pass data)
+add(1,2)
+
+

@@ -16,7 +16,7 @@ class App extends Component {
       //in header component props is assigned from child to parent
     
         <div style={({backgroundColor:'white'})}>
-            <Header userInput={(data) => {console.log('inside home',data)}}/> 
+            <Header userInput={(data) => {console.log('inside App',data)}}/> 
             
             <ProductDisplay prodData={this.state.productData}/>
             <Footer year='2022' month='august'/>

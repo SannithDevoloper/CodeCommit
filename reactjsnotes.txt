@@ -37,6 +37,7 @@ Add To VsCode
 > https://htmlcolorcodes.com/
 > https://imgbb.com/
 >https://www.w3schools.com/howto/howto_css_image_overlay.asp
+>npm i react-router-dom@5.3.0
 
 (2)ABOUT_REACT=>
 React >
@@ -324,5 +325,16 @@ function add(a,b){
 
 //child (call the function & pass data)
 add(1,2)
+
+(14).PARAMS &QUERY PARAMS===>
+
+/////params
+> pass after /
+> complousery to define in routing
+> use to pass small set of data
+////queryParams
+> pass after ?
+> no need to define anywhere
+> use to pass more than one value
 
 

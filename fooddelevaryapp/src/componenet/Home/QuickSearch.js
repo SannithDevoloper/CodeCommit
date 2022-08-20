@@ -1,7 +1,17 @@
 import React,{Component} from 'react';
-import './QuickSearch.css'
+import './QuickSearch.css';
+import QuickDisplay from './QuickDisplay';
+const url = "https://zomatoajulypi.herokuapp.com/quicksearch"
 
 class QuickSearch extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         mealType:''
+      }
+    }
+    
 
     render(){
         return(
@@ -12,47 +22,17 @@ class QuickSearch extends Component {
                 <span id="QuickSubHeading">
                     Find Restaurants By Meal Type
                 </span>
-                <div className="tileContainer">
-                    <div className="tileComponent1">
-                        <img src="images/lunch.png" alt="breakfast"/>
-                    </div>
-                    <div className="tileComponent2">
-                        <div className="componentHeading">
-                            <a href="../listing/listing.html">Breakfast</a>
-                        </div>
-                        <div className="componentSubHeading">
-                            Best Deals For BreakFast
-                        </div>
-                    </div>
-                </div>
-                <div className="tileContainer">
-                    <div className="tileComponent1">
-                        <img src="images/nightlife.png" alt="breakfast"/>
-                    </div>
-                    <div className="tileComponent2">
-                        <div className="componentHeading">
-                            <a href="../listing/listing.html">Breakfast</a>
-                        </div>
-                        <div className="componentSubHeading">
-                            Best Deals For BreakFast
-                        </div>
-                    </div>
-                </div>
-                <div className="tileContainer">
-                    <div className="tileComponent1">
-                        <img src="images/dinner.png" alt="breakfast"/>
-                    </div>
-                    <div className="tileComponent2">
-                        <div className="componentHeading">
-                            <a href="../listing/listing.html">Breakfast</a>
-                        </div>
-                        <div className="componentSubHeading">
-                            Best Deals For BreakFast
-                        </div>
-                    </div>
-                </div>
+                <QuickDisplay mealData={this.state.mealType}/>
+               
             </div>
         )
+    }
+    componentDidMount(){
+        fetch(url,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({mealType:data})
+        })
     }
     
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ProductDisplay from './ProductDisplay';
-import JSON from './db2.json'
+import JSON from './db.json'
 class App extends Component {
     constructor(props) {
       super(props)

@@ -31,7 +31,7 @@ const ListingDisplay = (props) => {
                                             {item.mealTypes[1].mealtype_name}
                                         </span>
                                     </div>
-                                    <div className="labelDiv">
+                                    <div className="labelDiv"> 
                                         <span className="label label-warning">
                                             {item.cuisines[0].cuisine_name}
                                         </span> &nbsp;
@@ -56,7 +56,7 @@ const ListingDisplay = (props) => {
             return(
                 <div>
                     <h2>Loading...</h2>
-                    <img src="/images/loader.gif" alt="loader"/>
+                    <img src="/images/loader_gif.gif" alt="loader"/>
                 </div>
             )
         }

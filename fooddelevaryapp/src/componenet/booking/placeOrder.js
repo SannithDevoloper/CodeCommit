@@ -10,11 +10,11 @@ class PlaceOrder extends Component{
         this.state={
             id:Math.floor(Math.random()*100000),
             hotel_name:this.props.match.params.restName,
-            name:'Nikita',
-            email:'Nikki@gmail.com',
+            name:'sannith',
+            email:'sannith@gmail.com',
             cost:0,
-            phone:87867678,
-            address:"YRT 45/13",
+            phone:8790487464,
+            address:"nizamabad",
             menuItem:''
         }
     }

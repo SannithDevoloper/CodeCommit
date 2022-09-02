@@ -49,6 +49,26 @@
       "phone": "7032619449",
       "address": "macherla",
       "menuItem": "12,13"
+    },
+    {
+      "id": 77356,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "name": "sannith",
+      "email": "sannithpeddolla143@gmail.com",
+      "cost": 1085,
+      "phone": "8790487464",
+      "address": "YRT 45/13",
+      "menuItem": "36,37,38,39,40"
+    },
+    {
+      "id": 74692,
+      "hotel_name": "Food Adda",
+      "name": "sannith",
+      "email": "sannithpeddolla143@gmail.com",
+      "cost": 1135,
+      "phone": "8790487464",
+      "address": "YRT 45/13",
+      "menuItem": "11,13,12,14,15"
     }
   ]
 }

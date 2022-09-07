@@ -53,7 +53,7 @@ class Header extends Component {
         return(
             <header>
                 <div id="brand">
-                    Developer Funnel
+                <Link to="/">Developer Funnel</Link>
                 </div>
                 <div id="social">
                 {this.conditionalHeader()}

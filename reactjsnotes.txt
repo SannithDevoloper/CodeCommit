@@ -421,5 +421,9 @@ npx json-server --watch order.json --port 9870
 (GET) => https://developerjwt.herokuapp.com/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 
+(20)PaymentGateway Api==>
+
+https://developerpayment.herokuapp.com/paynow
+
 
 

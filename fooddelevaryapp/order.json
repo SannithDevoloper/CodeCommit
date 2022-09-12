@@ -95,6 +95,19 @@
       "status": "TXN_FAILURE",
       "date": "2022-09-07%2013:24:38.0",
       "bank_name": "State%20Bank%20of%20India"
+    },
+    {
+      "id": 92076,
+      "hotel_name": "Captain Sam's",
+      "name": "nikhil",
+      "email": "nikhilreddykota87@gmail.com",
+      "cost": 169,
+      "phone": "8096996974",
+      "address": "YRT 45/13",
+      "menuItem": "26,26",
+      "status": "TXN_SUCCESS",
+      "date": "2022-09-08%2023:45:25.0",
+      "bank_name": "State%20Bank%20of%20India"
     }
   ]
 }

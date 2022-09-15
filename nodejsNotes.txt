@@ -1,0 +1,169 @@
+nodejs ==>
+its is an javascript run time enironmnet built on chrome's v8 javascript engine.
+ why nodejs?
+////EventDriven &non-blocking I/O model////
+///npm is largestecosystem of open
+ source libraraies in the world///
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Creating File using NodeJS==>
+const fs=require('fs')
+fs.writeFileSync('notes.txt','this file was created by node.js and written by sannith.')
+//1st argument is file name and second is data written in it
+fs.appendFileSync('notes.txt',' lives in hyderabad. ')
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+importing own Files ==>
+
+in app.js:=>
+const mul=require('./utils')
+const multi=mul(5,66)
+console.log(multi)
+
+in util.js:=>
+const mul= function(a,b){
+    return a *b
+}
+
+module.exports= mul
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+importing NPM modules==>
+
+npm init //creates package.json file
+npm i module@version 
+ex:=npm i chalk@2.4.1
+
+in app.js:=>
+const val=require('validator');
+console.log(val.isURL('https/snnithresume.netlify.com'))
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Global Npm module and nodemon==>
+
+npm i nodemon  -g
+nodemon -v // check version to conformation downloded perfect
+nodemon app.js
+
+with this nodemon app refresh automatic ,no need to run node app.js unnecessarly
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+FileSystem And Command line args==>
+
+getting inputs from users==>
+console.log(process.argv)
+// it returns array of arguments here 1st two arg are path defined 
+and from 3rd it is user defined argment
+
+
+in app.js:=>
+const comand=process.argv[2]
+if(command==='add')
+{
+console.log("notes is added")
+}
+else if(command==='del')
+{
+console.log("notes is deleted")
+}
+
+in terminal:==>
+node app.js add
+output:notes is added
+node app.js del
+output:notes is deleted
+
+node app.js  add --title="Things To Buy"
+console.log(process.argv[3])
+output:= --title=Things To Buy
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Arguments Passing with Yargs==>
+
+npm i yargs
+const  yargs=require('yargs')
+console.log(yargs.argv)
+
+node app.js  add --title="Things To Buy"
+output:{_:['add'],title:'Things To Buy','$0':'app.js'}
+
+//customize yargs version
+yargs.version('1.1.0')
+node app.js --version
+output:=1.1.0
+
+// Create add command
+yargs.command({
+    command: 'add',
+    describe: 'Add a new note',
+    handler:function() {
+     console.log('adding a new note')
+    }
+})
+
+node app.js --help
+node app.js add
+output:=adding a new note
+
+// Create remove command
+yargs.command({
+    command: 'remove',
+    describe: 'Remove a note',
+    handler:function( ) {
+   console.log('removing a note')
+    }
+})
+
+node app.js remove
+output:=removing a note
+
+// Create list command
+yargs.command({
+    command: 'list',
+    describe: 'List your notes',
+    handler:function() {
+        console.log('listing out all the notes')
+    }
+})
+
+node app.js list
+output:=listing out all the notes'
+
+
+
+// Create read command
+yargs.command({
+    command: 'read',
+    describe: 'Read a Note',
+    handler:function() {
+        console.log('Reading a notes')
+    }
+})
+
+node app.js read
+output:=Reading a notes
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Arguments Passing with Yargs II part==>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

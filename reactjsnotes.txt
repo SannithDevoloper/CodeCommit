@@ -1,3 +1,40 @@
+INDEX:-==>
+html
+css
+bootstrap 3,4,5
+Npm
+React = 3
+Mock API
+json-server
+Deployment
+-> MERN
+-> heroku
+-> Netlify
+-> ReactPy
+-> Aws
+-> Docker
+-> Nginx
+React-JWT(Login Logout)-2
+React_hooks -1
+HOC
+React-GraphQL - 1 
+Basic React Native- 1
+///////////////////
+Github
+React-Redux - 1
+React-Redux - 1
+React-PWA - 1
+Testing Jest Enzime
+ReactMaps
+///////Walkthrough///////
+React-Saga -1
+React-with-typescript-1
+--------NOT Backend--------------
+API
+GraphQL
+Login/Logout
+
+(0)Github
 https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
 
 //first Time from new folder
@@ -65,6 +102,8 @@ JSON
         "city":"Delhi"
     }
 ]
+
+NPM:-
 npm  > node package manager
 >>>>>>Package.json<<<<<<
 > Entry point to application
@@ -338,7 +377,8 @@ add(1,2)
 > use to pass more than one value
 
 
-(15)////////////////////////////////////////////////////////////////
+(15)Default Props
+////////////////////////////////////////////////////////////////
 default props
 ////////////////////////////////////////////////////////////////
 History > for redirection
@@ -425,5 +465,24 @@ npx json-server --watch order.json --port 9870
 
 https://developerpayment.herokuapp.com/paynow
 
+(21)Deployment ==>
+//deployment
+ npm run build
 
+heroku.com
 
+(22)HOC==>
+https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial
+
+(23)ReactNative==>
+//// Native app
+> npx create-react-native-app appname
+> npm run web
+> http://localhost:19006/
+
+(24)React-Redux==>
+
+view  >>> Display part of the application
+Action >>> Where all the api call happen
+reducer >>> Help to manage the state
+store >>> Where we save the state

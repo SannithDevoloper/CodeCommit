@@ -82,8 +82,8 @@ React is a frontend framework/lib which help to build
 single page application using component base structure
 
 
-2,014,487
-open source
+2,014,487 packages
+ react is open source
 > Any one can contribute to development
 
 JSON
@@ -103,8 +103,6 @@ JSON
     }
 ]
 
-NPM:-
-npm  > node package manager
 >>>>>>Package.json<<<<<<
 > Entry point to application
 > meta Data(name of app, version description)
@@ -162,6 +160,10 @@ inline
 block
 > start in the new line
 > always take the whole width of screen
+
+<ol><li></li></ol>
+<ul><li></li></ul>
+<dl><dt>---</dt><db>----</db><db>---</db></dl>
 
 
 (4)CSS=>

@@ -1,0 +1,112 @@
+(1) what is react ?
+   
+=>It is javascript library created for building fast and interactive  ui for both web and mobile
+=>It is open source
+=>It uses virtual DOM(javaScriptObject),which improves performance of app
+    virtual DOM is faster than regular DOM
+
+(2)how react works ?
+
+=>To make it faster, React implements a virtual DOM that is basically a DOM tree representation in Javascript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browsers DOM.
+
+(3)what are components in react ?
+=>components are building blocks for any reactapp
+=>component can be either class or function
+=>A react application is made of multiple components, each responsible for rendering a small, reusable piece of      HTML. Components can be nested within other components
+
+(4)Advantages and limitations of react ?
+=>
+
+
+(5) What is JSX and how JSX can help applications in React.js?
+=>JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() or      appendChild() methods.
+=>It is faster because it performs optimization while compiling code to JavaScript.
+
+  Example:-
+        
+       import React from 'react'
+
+class App extends React.Component {
+
+   render() {
+      return (
+         <div>
+            Hello World!
+         </div>
+      )
+   }
+}
+export default App
+
+
+JSX is a JavaScript Expression
+
+JSX expressions are JavaScript expressions too. When compiled, they actually become regular JavaScript objects. For instance, the code below:
+
+const hello = <h1 className = "greet"> Hello World </h1>
+will be compiled to
+
+const hello = React.createElement {
+    type: "h1",
+    props: {
+      className: "greet",  
+      children: "Hello World"
+    }
+}
+Since they are compiled to objects, JSX can be used wherever a regular JavaScript expression can be used.
+
+(6)what is react DOM ?
+
+=>ReactDOM() is a package that provides DOM specific methods that can be used at the top level of a web app to       enable an efficient way of managing DOM elements of the web page
+=>methods of react Dom
+     render()
+     findDOMNode()
+     unmountComponentAtNode()
+      hydrate()
+      createPortal()
+
+import ReactDOM from 'react-dom'
+
+To use the ReactDOM in any React web app we must first import ReactDOM from the react-dom package
+
+(7) What is the difference between ReactDOM and React?
+
+ React package contains: React.createElement(), React.createClass(), React.Component(), React.PropTypes(), React.Children()
+
+ReactDOM package contains: ReactDOM.render(), ReactDOM.unmountComponentAtNode(), ReactDOM.findDOMNode(), and react-dom/server that including: ReactDOMServer.renderToString() and ReactDOMServer.renderToStaticMarkup().
+
+The ReactDOM module exposes DOM-specific methods, while React has the core tools intended to be shared by React on different platforms (e.g. React Native).
+
+(8)  What are the differences between a class component and functional component?
+
+=>Functional Components
+
+Functional components are basic JavaScript functions. These are typically arrow functions but can also be created with the regular function keyword.
+Sometimes referred to as stateless components as they simply accept data and display them in some form; that is they are mainly responsible for rendering UI.
+React lifecycle methods (for example, componentDidMount()) cannot be used in functional components.
+There is no render method used in functional components.
+These are mainly responsible for UI and are typically presentational only (For example, a Button component).
+Functional components can accept and use props.
+Functional components should be favored if you do not need to make use of React state.
+
+=>Class Components
+Class components make use of ES6 class and extend the Component class in React.
+Sometimes called stateful components as they tend to implement logic and state.
+React lifecycle methods can be used inside class components (for example, componentDidMount()).
+We pass props down to class components and access them with this.props.
+Class-based components can have refs to underlying DOM nodes.
+Class-based components can use shouldComponentUpdate() and PureComponent() performance optimisation techniques.
+
+(9)What is the difference between state and props?
+
+=>Props	                                                                                                                State
+Props are read-only.	                                                                        State changes can be asynchronous.
+Props are immutable.	                                                      State is mutable.
+Props allow you to pass data from one component to 
+other components as an argument.	                                     State holds information about the components.
+Props can be accessed by the child component.	                   State cannot be accessed by child components.
+Props are used to communicate between components. 	States can be used for rendering dynamic changes                                                                                                        with the component.
+Stateless component can have Props.	                                  Stateless components cannot have State.
+Props make components reusable.	                                   State cannot make components reusable.
+Props are external and controlled by whatever 
+renders the component.	                                                    The State is internal and controlled by the React Component itself.
